@@ -1,0 +1,482 @@
+/********************
+      Colors
+*********************/
+$prussian-blue: rgba(0, 51, 83, 1);
+$french-blue: rgba(0, 105, 182, 1);
+$shuttle-gray: rgba(92, 104, 112, 1);
+$gull-gray: rgba(160, 179, 192, 1);
+
+$primary-color: $prussian-blue;
+$primary-accent-color: $french-blue;
+$secondary-color: $shuttle-gray;
+$secondary-accent-color: $gull-gray;
+
+/********************
+       Fonts
+*********************/
+$body-font: 'Open Sans', serif;
+$heading-font: 'Oswald', sans-serif;
+
+/********************
+       Mixins
+*********************/
+@mixin transluscent-background($color, $duration: 300ms) {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: transparentize($color, .5);
+    transition: background-color $duration;
+
+  }
+  &:hover::after {
+    background-color: transparent;
+  }
+
+}
+/********************
+        Base
+*********************/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $body-font;
+
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: $heading-font;
+}
+
+/************************
+        GENERAL
+************************/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body a {
+  text-decoration: none;
+}
+
+body background-image {
+  max-width: 100%;
+  height: 100%;
+
+}
+
+
+/***********************
+         Layout
+************************/
+
+/**********************
+        Components
+*************************/
+.header {
+  background-image: url("http://mcbeedigital.com/wp-content/uploads/2014/05/waves.jpg");
+  background-size: cover;
+  background-position: center center;
+
+  @include transluscent-background($primary-color);
+
+
+
+
+/************************
+        HEADING
+************************/
+
+header {
+  background-image: url("http://mcbeedigital.com/wp-content/uploads/2014/05/waves.jpg");
+  height: 189px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  background-size: cover;
+  overflow: hidden;
+  background-blend-mode: luminosity;
+  transition: 0.4s linear;
+  background: url("http://mcbeedigital.com/wp-content/uploads/2014/05/waves.jpg") no-repeat center hsl(202, 100%, 36%);
+  background-size: cover;
+}
+header:hover {
+  background-color: transparent;
+}
+header {
+  filter: sepia(1);
+  -webkit-filter: sepia(1);
+  -moz-filter: sepia(1);
+  -o-filter: sepia(1);
+  -ms-filter: sepia(1);
+}
+header:hover {
+  filter: sepia(0);
+  -webkit-filter: sepia(0);
+  -moz-filter: sepia(0);
+  -o-filter: sepia(0);
+  -ms-filter: sepia(0);
+}
+background-image {
+  width: 444px;
+  height: 189px;
+}
+.navlinks {
+  color: $primary-color;
+}
+#logo {
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  top: 15px;
+  left: 1px;
+}
+header p {
+  font-family: $body-font;
+  text-align: center;
+  position: relative;
+  bottom: 18px;
+  left: 2px;
+  font-size: 225%;
+  font-weight: 400;
+  color: white;
+}
+.subtitle {
+  font-family: $body-font;
+  text-align: center;
+  position: relative;
+  margin-top: -58px;
+  font-size: 15px;
+  font-weight: normal;
+
+}
+/************************
+        CONTENT
+************************/
+
+.content {
+  height: 1251px;
+}
+h2 {
+  font-size: 3.9em;
+  padding: 15px;
+  position: relative;
+  bottom: 12px;
+  left: 12px;
+  font-weight: normal;
+  line-height: 114%;
+  letter-spacing: -1px;
+}
+h3 {
+  font-size: 3.9em;
+  padding: 0;
+  position: relative;
+  bottom: 88px;
+  left: 26px;
+  font-weight: normal;
+  line-height: 114%;
+  letter-spacing: -1px;
+}
+.content p {
+  font-size: 1.01em;
+  font-family: $body-font;
+  position: relative;
+  right: -26px;
+  top: -130px;
+  line-height: 165%;
+  max-width: 90%;
+}
+.content nav a {
+  font-family: $body-font;
+  position: relative;
+  top: -144px;
+  right: -30px;
+  text-decoration: underline;
+  font-weight: 600;
+  color: #a6b7c3;
+}
+blockquote {
+  font-family: $body-font;
+  font-size: 1.45em;
+  color: $secondary-color;
+  background: #f9f9f9;
+  border-left: 3px solid #ccc;
+  quotes: "\201C""\201D""\2018""\2019";
+  position: relative;
+  bottom: 128px;
+  right: 15px;
+  margin-right: -3px;
+  line-height: 165%;
+  letter-spacing: 0;
+}
+blockquote span {
+  display: inline;
+  position: relative;
+  bottom: 0;
+  left: 8px;
+}
+.parlast {
+  font-size: 1.01em;
+  font-family: $body-font;
+  position: relative;
+  right: -26px;
+  top: -130px;
+  line-height: 165%;
+  max-width: 90%;
+
+}
+/************************
+      NAVIGATION
+************************/
+
+nav ul {
+  list-style: none;
+  text-align: center;
+  margin: 0;
+}
+nav li:first-child {
+  position: relative;
+  right: 34px;
+  top: 4px;
+  display: inline-block;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.75px;
+}
+nav li:nth-child(2) {
+  position: relative;
+  right: 21px;
+  top: 4px;
+  display: inline-block;
+}
+nav li:last-child {
+  position: relative;
+  top: 10px;
+  right: 20px;
+  max-height: 5px;
+  max-width: 5px;
+  display: inline-block;
+
+}
+.buttons {
+  list-style: none;
+  position: relative;
+  top: 0;
+}
+.buttons li {
+  width: 46px;
+  height: 42px;
+  background-color: $primary-color;
+  padding: 0;
+  display: inline-block;
+  position: relative;
+  bottom: 130px;
+  left: -11px;
+  list-style: none;
+}
+.buttons li:last-child {
+  position: relative;
+  bottom: 130px;
+  left: 2px;
+}
+.buttons li:nth-child(2) {
+  position: relative;
+  bottom: 130px;
+  left: -5px;
+}
+.buttons li img {
+  position: relative;
+  right: -4px;
+  bottom: -4px;
+  width: 80%;
+  height: 80%;
+}
+.authorinfo {
+  text-align: center;
+}
+.authorinfo img {
+  border-radius: 50%;
+  width: 118px;
+  height: 118px;
+  position: relative;
+  top: 105px;
+    @include transluscent-background($primary-accent-color, 2s);
+  }
+}
+.authorinfo p {
+  font-family: $body-font;
+  font-size: 1.45em;
+  color: $primary-accent-color;
+  line-height: 165%;
+  letter-spacing: 0;
+  position: relative;
+  bottom: -88px;
+}
+.authorinfo a {
+  display: inline-block;
+  position: relative;
+  bottom: 50px;
+  left: 0;
+  font-size: 0.8em;
+  padding: 3px;
+  text-align: center;
+}
+.authorinfo p:first-child {
+  color: #ccc;
+}
+.ad img {
+  height: 313px;
+  width: 385px;
+  text-align: center;
+  padding: 0;
+  position: relative;
+  left: 30px;
+  bottom: -106px;
+}
+.ad p {
+  position: relative;
+  bottom: -95px;
+  text-align: right;
+  font-family: $body-font;
+  right: 30px;
+  font-size: 1.11em;
+  text-decoration: underline;
+  color: #ccc;
+}
+.ad img {
+  filter: sepia(1);
+  -webkit-filter: sepia(1);
+  -moz-filter: sepia(1);
+  -o-filter: sepia(1);
+  -ms-filter: sepia(1);
+}
+.ad img:hover {
+  filter: sepia(0);
+  -webkit-filter: sepia(0);
+  -moz-filter: sepia(0);
+  -o-filter: sepia(0);
+  -ms-filter: sepia(0);
+}
+.popular ul {
+  list-style: none;
+}
+.popular ul a {
+  height: 277px;
+  width: 386px;
+  border-top: gray solid 1px;
+}
+.popular h2 {
+  border-top: #ccc solid 1px;
+  color: black;
+  font-size: 2.7em;
+  position: relative;
+  text-align: center;
+  vertical-align: center;
+  bottom: -130px;
+  padding-top: 80px;
+  margin-left: -20px;
+}
+.popular {
+  height: 1450px;
+  bottom: -40px;
+}
+.popular img {
+  max-width: 100%;
+  height: 277px;
+  position: relative;
+  bottom: -100px;
+  padding: 0;
+  margin-top: -10px;
+  display: block;
+}
+.popular li {
+  width: 388px;
+  min-height: 277px;
+  max-height: auto;
+  margin-left: -8px;
+  padding: -5px;
+  margin-top: 50px;
+  display: block;
+}
+.popular ul img {
+  filter: sepia(1);
+  -webkit-filter: sepia(1);
+  -moz-filter: sepia(1);
+  -o-filter: sepia(1);
+  -ms-filter: sepia(1);
+}
+.popular ul img:hover {
+  filter: sepia(0);
+  -webkit-filter: sepia(0);
+  -moz-filter: sepia(0);
+  -o-filter: sepia(0);
+  -ms-filter: sepia(0);
+
+}
+/************************
+        FOOTER
+************************/
+
+footer {
+  font-size: 0.75em;
+  text-align: center;
+  clear: both;
+  padding-top: 0;
+  color: #ccc;
+  background-color: $primary-color;
+  height: 418px;
+  width: 100%;
+  position: absolute;
+  margin-top: -184px;
+  color: #708c9d;
+}
+footer ul {
+  list-style: none;
+  color: #708c9d;
+}
+footer p {
+  font-family: $body-font;
+  font-size: 1em;
+  color: $secondary-accent-color;
+  position: relative;
+  bottom: -20px;
+  font-size: 1.5em;
+}
+footer p:last-child {
+  position: relative;
+  bottom: -10px;
+}
+footer li {
+  font-family: $body-font;
+  font-size: 1.5em;
+  text-align: center;
+  display: inline;
+  width: 110px;
+  margin-left: 15px;
+  position: relative;
+  bottom: -35px;
+  left: -30px;
+  padding: 0;
+  color: #708c9d;
+}
+footer img {
+  width: 22%;
+  height: 22%;
+  position: relative;
+  bottom: -52px;
+  right: 5px;
+}
+footer a {
+  color: #708c9d;
+}
+span {
+  display: none;
+}

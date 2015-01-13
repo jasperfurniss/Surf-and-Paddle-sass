@@ -1,0 +1,105 @@
+@media screen and (min-width: 650px) {
+  body {
+    height: 2104px;
+    width: 1300px;
+  }
+  /*
+columns
+*/
+
+  .content, .column1 {
+    height: 871px;
+    margin-left: 162px;
+    max-width: 618px;
+  }
+  .column2 {
+    height: 871px;
+    margin-right: 78px;
+    max-width: 442px;
+  }
+  /************************
+HEADER
+************************/
+
+  header {
+    height: 523px;
+    width: 100%;
+    font-size: 350%;
+  }
+  #logo {
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    top: -76px;
+    left: -485px;
+  }
+  header ul li:nth-child(1) {
+    position: relative;
+    right: -386px;
+    top: -29px;
+    font-size: 18px;
+  }
+  header ul li:nth-child(2) {
+    font-size: 18px;
+    position: relative;
+    top: -29px;
+    right: -390px;
+  }
+  header ul li:last-child {
+    position: relative;
+    top: -24px;
+    right: -378px;
+  }
+  header p {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    position: relative;
+    bottom: 48px;
+    left: -5px;
+    font-size: 185%;
+    color: white;
+    letter-spacing: -4px;
+  }
+  .subtitle {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    position: relative;
+    margin-top: -170px;
+    font-size: 15px;
+    font-weight: normal;
+  }
+  h2 {
+    font-size: 3.9em;
+    padding: 15px;
+    position: relative;
+    bottom: 4px;
+    left: -15px;
+    font-weight: normal;
+    line-height: 114%;
+    letter-spacing: .04px;
+  }
+  h3 {
+    font-size: 3.9em;
+    padding: 0px;
+    position: relative;
+    bottom: 153px;
+    left: 250px;
+    font-weight: normal;
+    line-height: 114%;
+    letter-spacing: .5px;
+  }
+  span {
+    display: inline-block;
+    text-decoration: none;
+  }
+  .content nav a {
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    top: -209px;
+    right: -115px;
+    text-decoration: underline;
+    font-weight: 600;
+    color: #A6B7C3;
+    font-size: .8em;
+  }
+}
