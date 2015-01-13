@@ -1,59 +1,424 @@
-/*
-Error: Undefined variable: "$shuttle-gray".
-        on line 12 of main.scss
+@charset "UTF-8";
+/********************
+      Colors
+*********************/
+/********************
+       Fonts
+*********************/
+/********************
+       Mixins
+*********************/
+/********************
+        Base
+*********************/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", serif; }
 
-7: $bermuda-gray: #708c9d;
-8: $heather: #a6b7c3;
-9: 
-10: $primary-color: $prussian-blue;
-11: $primary-accent-color: $french-blue;
-12: $secondary-color: $shuttle-gray;
-13: $secondary-accent-color: $gull-gray;
-14: 
-15: $button-background: #5d676e;
-16: $hover: $primary-color;
-17: 
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Oswald", sans-serif; }
 
-Backtrace:
-main.scss:12
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/script/tree/variable.rb:49:in `_perform'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/script/tree/node.rb:50:in `perform'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:458:in `visit_variable'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/stack.rb:79:in `block in with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/stack.rb:79:in `with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `map'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:157:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/engine.rb:368:in `_render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/engine.rb:285:in `render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:209:in `each'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:328:in `block in watch'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/vendor/listen/lib/listen/listener.rb:252:in `call'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined variable: \"$shuttle-gray\".\A         on line 12 of main.scss\A \A 7: $bermuda-gray: #708c9d;\A 8: $heather: #a6b7c3;\A 9: \A 10: $primary-color: $prussian-blue;\A 11: $primary-accent-color: $french-blue;\A 12: $secondary-color: $shuttle-gray;\A 13: $secondary-accent-color: $gull-gray;\A 14: \A 15: $button-background: #5d676e;\A 16: $hover: $primary-color;\A 17: "; }
+/************************
+        GENERAL
+************************/
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+html,
+body a {
+  text-decoration: none; }
+
+body background-image {
+  max-width: 100%;
+  height: 100%; }
+
+/***********************
+         Layout
+************************/
+/**********************
+        Components
+*************************/
+.header {
+  background-image: url("http://mcbeedigital.com/wp-content/uploads/2014/05/waves.jpg");
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  /************************
+          HEADING
+  ************************/
+  /************************
+          CONTENT
+  ************************/
+  /************************
+        NAVIGATION
+  ************************/ }
+  .header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 51, 83, 0.5);
+    transition: background-color 300ms; }
+  .header:hover::after {
+    background-color: transparent; }
+  .header header {
+    background-image: url("http://mcbeedigital.com/wp-content/uploads/2014/05/waves.jpg");
+    height: 189px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    background-size: cover;
+    overflow: hidden;
+    background-blend-mode: luminosity;
+    transition: 0.4s linear;
+    background: url("http://mcbeedigital.com/wp-content/uploads/2014/05/waves.jpg") no-repeat center #0074b8;
+    background-size: cover; }
+  .header header:hover {
+    background-color: transparent; }
+  .header header {
+    filter: sepia(1);
+    -webkit-filter: sepia(1);
+    -moz-filter: sepia(1);
+    -o-filter: sepia(1);
+    -ms-filter: sepia(1); }
+  .header header:hover {
+    filter: sepia(0);
+    -webkit-filter: sepia(0);
+    -moz-filter: sepia(0);
+    -o-filter: sepia(0);
+    -ms-filter: sepia(0); }
+  .header background-image {
+    width: 444px;
+    height: 189px; }
+  .header .navlinks {
+    color: #003353; }
+  .header #logo {
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    top: 15px;
+    left: 1px; }
+  .header header p {
+    font-family: "Open Sans", serif;
+    text-align: center;
+    position: relative;
+    bottom: 18px;
+    left: 2px;
+    font-size: 225%;
+    font-weight: 400;
+    color: white; }
+  .header .subtitle {
+    font-family: "Open Sans", serif;
+    text-align: center;
+    position: relative;
+    margin-top: -58px;
+    font-size: 15px;
+    font-weight: normal; }
+  .header .content {
+    height: 1251px; }
+  .header h2 {
+    font-size: 3.9em;
+    padding: 15px;
+    position: relative;
+    bottom: 12px;
+    left: 12px;
+    font-weight: normal;
+    line-height: 114%;
+    letter-spacing: -1px; }
+  .header h3 {
+    font-size: 3.9em;
+    padding: 0;
+    position: relative;
+    bottom: 88px;
+    left: 26px;
+    font-weight: normal;
+    line-height: 114%;
+    letter-spacing: -1px; }
+  .header .content p {
+    font-size: 1.01em;
+    font-family: "Open Sans", serif;
+    position: relative;
+    right: -26px;
+    top: -130px;
+    line-height: 165%;
+    max-width: 90%; }
+  .header .content nav a {
+    font-family: "Open Sans", serif;
+    position: relative;
+    top: -144px;
+    right: -30px;
+    text-decoration: underline;
+    font-weight: 600;
+    color: #a6b7c3; }
+  .header blockquote {
+    font-family: "Open Sans", serif;
+    font-size: 1.45em;
+    color: #5c6870;
+    background: #f9f9f9;
+    border-left: 3px solid #ccc;
+    quotes: "“" "”" "‘" "’";
+    position: relative;
+    bottom: 128px;
+    right: 15px;
+    margin-right: -3px;
+    line-height: 165%;
+    letter-spacing: 0; }
+  .header blockquote span {
+    display: inline;
+    position: relative;
+    bottom: 0;
+    left: 8px; }
+  .header .parlast {
+    font-size: 1.01em;
+    font-family: "Open Sans", serif;
+    position: relative;
+    right: -26px;
+    top: -130px;
+    line-height: 165%;
+    max-width: 90%; }
+  .header nav ul {
+    list-style: none;
+    text-align: center;
+    margin: 0; }
+  .header nav li:first-child {
+    position: relative;
+    right: 34px;
+    top: 4px;
+    display: inline-block;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.75px; }
+  .header nav li:nth-child(2) {
+    position: relative;
+    right: 21px;
+    top: 4px;
+    display: inline-block; }
+  .header nav li:last-child {
+    position: relative;
+    top: 10px;
+    right: 20px;
+    max-height: 5px;
+    max-width: 5px;
+    display: inline-block; }
+  .header .buttons {
+    list-style: none;
+    position: relative;
+    top: 0; }
+  .header .buttons li {
+    width: 46px;
+    height: 42px;
+    background-color: #003353;
+    padding: 0;
+    display: inline-block;
+    position: relative;
+    bottom: 130px;
+    left: -11px;
+    list-style: none; }
+  .header .buttons li:last-child {
+    position: relative;
+    bottom: 130px;
+    left: 2px; }
+  .header .buttons li:nth-child(2) {
+    position: relative;
+    bottom: 130px;
+    left: -5px; }
+  .header .buttons li img {
+    position: relative;
+    right: -4px;
+    bottom: -4px;
+    width: 80%;
+    height: 80%; }
+  .header .authorinfo {
+    text-align: center; }
+  .header .authorinfo img {
+    border-radius: 50%;
+    width: 118px;
+    height: 118px;
+    position: relative;
+    top: 105px;
+    position: relative; }
+    .header .authorinfo img::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(0, 105, 182, 0.5);
+      transition: background-color 2s; }
+    .header .authorinfo img:hover::after {
+      background-color: transparent; }
+
+.authorinfo p {
+  font-family: "Open Sans", serif;
+  font-size: 1.45em;
+  color: #0069b6;
+  line-height: 165%;
+  letter-spacing: 0;
+  position: relative;
+  bottom: -88px; }
+
+.authorinfo a {
+  display: inline-block;
+  position: relative;
+  bottom: 50px;
+  left: 0;
+  font-size: 0.8em;
+  padding: 3px;
+  text-align: center; }
+
+.authorinfo p:first-child {
+  color: #ccc; }
+
+.ad img {
+  height: 313px;
+  width: 385px;
+  text-align: center;
+  padding: 0;
+  position: relative;
+  left: 30px;
+  bottom: -106px; }
+
+.ad p {
+  position: relative;
+  bottom: -95px;
+  text-align: right;
+  font-family: "Open Sans", serif;
+  right: 30px;
+  font-size: 1.11em;
+  text-decoration: underline;
+  color: #ccc; }
+
+.ad img {
+  filter: sepia(1);
+  -webkit-filter: sepia(1);
+  -moz-filter: sepia(1);
+  -o-filter: sepia(1);
+  -ms-filter: sepia(1); }
+
+.ad img:hover {
+  filter: sepia(0);
+  -webkit-filter: sepia(0);
+  -moz-filter: sepia(0);
+  -o-filter: sepia(0);
+  -ms-filter: sepia(0); }
+
+.popular ul {
+  list-style: none; }
+
+.popular ul a {
+  height: 277px;
+  width: 386px;
+  border-top: gray solid 1px; }
+
+.popular h2 {
+  border-top: #ccc solid 1px;
+  color: black;
+  font-size: 2.7em;
+  position: relative;
+  text-align: center;
+  vertical-align: center;
+  bottom: -130px;
+  padding-top: 80px;
+  margin-left: -20px; }
+
+.popular {
+  height: 1450px;
+  bottom: -40px; }
+
+.popular img {
+  max-width: 100%;
+  height: 277px;
+  position: relative;
+  bottom: -100px;
+  padding: 0;
+  margin-top: -10px;
+  display: block; }
+
+.popular li {
+  width: 388px;
+  min-height: 277px;
+  max-height: auto;
+  margin-left: -8px;
+  padding: -5px;
+  margin-top: 50px;
+  display: block; }
+
+.popular ul img {
+  filter: sepia(1);
+  -webkit-filter: sepia(1);
+  -moz-filter: sepia(1);
+  -o-filter: sepia(1);
+  -ms-filter: sepia(1); }
+
+.popular ul img:hover {
+  filter: sepia(0);
+  -webkit-filter: sepia(0);
+  -moz-filter: sepia(0);
+  -o-filter: sepia(0);
+  -ms-filter: sepia(0); }
+
+/************************
+        FOOTER
+************************/
+footer {
+  font-size: 0.75em;
+  text-align: center;
+  clear: both;
+  padding-top: 0;
+  color: #ccc;
+  background-color: #003353;
+  height: 418px;
+  width: 100%;
+  position: absolute;
+  margin-top: -184px;
+  color: #708c9d; }
+
+footer ul {
+  list-style: none;
+  color: #708c9d; }
+
+footer p {
+  font-family: "Open Sans", serif;
+  font-size: 1em;
+  color: #a0b3c0;
+  position: relative;
+  bottom: -20px;
+  font-size: 1.5em; }
+
+footer p:last-child {
+  position: relative;
+  bottom: -10px; }
+
+footer li {
+  font-family: "Open Sans", serif;
+  font-size: 1.5em;
+  text-align: center;
+  display: inline;
+  width: 110px;
+  margin-left: 15px;
+  position: relative;
+  bottom: -35px;
+  left: -30px;
+  padding: 0;
+  color: #708c9d; }
+
+footer img {
+  width: 22%;
+  height: 22%;
+  position: relative;
+  bottom: -52px;
+  right: 5px; }
+
+footer a {
+  color: #708c9d; }
+
+span {
+  display: none; }
+
+/*# sourceMappingURL=main.css.map */
